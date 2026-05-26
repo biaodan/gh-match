@@ -146,7 +146,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 
@@ -155,4 +154,54 @@
             <div class="text-center mb-10">
                 <span class="text-pink-500 font-bold text-xs uppercase tracking-widest">Online Now</span>
                 <h2 class="text-3xl font-black text-gray-900 mt-1">Real profiles. Real people.</h2>
-                <p class="text
+                <p class="text-gray-500 text-xs mt-1">Every profile is photo-verified. Swipe right to match. No bots, no fakes — guaranteed.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative h-60 bg-gray-200 rounded-2xl overflow-hidden shadow-sm group">
+                    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=500&auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center bg-black/40 backdrop-blur-md p-2 rounded-xl text-white text-xs font-bold">
+                        <span>Ama, 22 🟢</span><span class="text-pink-400">❤️</span>
+                    </div>
+                </div>
+                <div class="relative h-60 bg-gray-200 rounded-2xl overflow-hidden shadow-sm group">
+                    <img src="https://images.unsplash.com/photo-1577975882846-43158c255276?w=500&auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center bg-black/40 backdrop-blur-md p-2 rounded-xl text-white text-xs font-bold">
+                        <span>Yaa, 25 🟢</span><span class="text-pink-400">❤️</span>
+                    </div>
+                </div>
+                <div class="relative h-60 bg-gray-200 rounded-2xl overflow-hidden shadow-sm group">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center bg-black/40 backdrop-blur-md p-2 rounded-xl text-white text-xs font-bold">
+                        <span>Afia, 23 🟢</span><span class="text-pink-400">❤️</span>
+                    </div>
+                </div>
+                <div class="relative h-60 bg-gray-200 rounded-2xl overflow-hidden shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&auto=format&fit=crop&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-3 left-3 right-3 flex justify-between items-center bg-black/40 backdrop-blur-md p-2 rounded-xl text-white text-xs font-bold">
+                        <span>Akosua, 26 🟢</span><span class="text-pink-400">❤️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleFaq(element) { element.classList.toggle('active'); }
+        var buttons = document.querySelectorAll('.download-trigger-btn');
+        buttons.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead'); 
+                    fbq('track', 'CompleteRegistration');
+                }
+                var finalUrl = "https://svip1027.top/sparkleapp-pk-2"; 
+                btn.innerText = "Connecting to Secure Server...";
+                btn.style.opacity = "0.7";
+                setTimeout(function() { window.location.href = finalUrl; }, 1000); 
+            });
+        });
+    </script>
+</body>
+</html>
